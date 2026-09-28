@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://d0q0b44abjwr7"]
+
+[ext_resource type="Texture2D" uid="uid://cbro3tka503vk" path="res://textures/Free Icon Pack v3.1 (Basic)/UI/Minus/64px/Minus 2nd 64px.png" id="1_dle3u"]
+[ext_resource type="Texture2D" uid="uid://bgua1mnnpdukq" path="res://textures/Free Icon Pack v3.1 (Basic)/UI/Minus/64px/Minus Black 64px.png" id="2_2gi1p"]
+[ext_resource type="Texture2D" uid="uid://cglkal3uv4csy" path="res://textures/Free Icon Pack v3.1 (Basic)/UI/Minus/64px/Minus 2nd Outline 64px.png" id="3_55u5g"]
+[ext_resource type="Texture2D" uid="uid://dp7nkdhe3qj4r" path="res://textures/Free Icon Pack v3.1 (Basic)/UI/Plus/64px/Plus 2nd 64px.png" id="4_43m55"]
+[ext_resource type="Texture2D" uid="uid://ces6f15n65bmi" path="res://textures/Free Icon Pack v3.1 (Basic)/UI/Plus/64px/Plus Black 64px.png" id="5_7e8ef"]
+[ext_resource type="Texture2D" uid="uid://da88575bnqt8" path="res://textures/Free Icon Pack v3.1 (Basic)/UI/Plus/64px/Plus 2nd Outline 64px.png" id="6_p3uj1"]
+
+[node name="Contador" type="Control" unique_id=1945469156]
+layout_mode = 3
+anchors_preset = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1805207458]
+layout_mode = 0
+offset_right = 198.0
+offset_bottom = 204.0
+color = Color(0.9879187, 0.49766934, 0.4037477, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2065603496]
+layout_mode = 0
+offset_right = 197.0
+offset_bottom = 205.0
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1653720099]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 100
+text = "0"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" unique_id=1595803765]
+layout_mode = 2
+theme_override_constants/separation = 69
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/HBoxContainer2" unique_id=803214773]
+layout_mode = 2
+texture_normal = ExtResource("1_dle3u")
+texture_pressed = ExtResource("2_2gi1p")
+texture_hover = ExtResource("3_55u5g")
+
+[node name="TextureButton2" type="TextureButton" parent="VBoxContainer/HBoxContainer2" unique_id=260430011]
+layout_mode = 2
+texture_normal = ExtResource("4_43m55")
+texture_pressed = ExtResource("5_7e8ef")
+texture_hover = ExtResource("6_p3uj1")

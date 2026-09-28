@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://83myqrdj0vij"]
+
+[ext_resource type="PackedScene" uid="uid://d0q0b44abjwr7" path="res://scenes/contador.tscn" id="1_o5qli"]
+
+[node name="Main" type="Control" unique_id=1390024142]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1983052857]
+clip_children = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer" unique_id=1745664998]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/h_separation = 4
+theme_override_constants/v_separation = -24
+columns = 6
+
+[node name="Contador" parent="ScrollContainer/GridContainer" unique_id=1945469156 instance=ExtResource("1_o5qli")]
+layout_mode = 2
+
+[node name="Contador2" parent="ScrollContainer/GridContainer" unique_id=393007931 instance=ExtResource("1_o5qli")]
+layout_mode = 2
+
+[node name="Contador3" parent="ScrollContainer/GridContainer" unique_id=130289703 instance=ExtResource("1_o5qli")]
+layout_mode = 2
+
+[node name="Contador4" parent="ScrollContainer/GridContainer" unique_id=1091587433 instance=ExtResource("1_o5qli")]
+layout_mode = 2
+
+[node name="Contador5" parent="ScrollContainer/GridContainer" unique_id=746893730 instance=ExtResource("1_o5qli")]
+layout_mode = 2
+
+[node name="Contador6" parent="ScrollContainer/GridContainer" unique_id=1347949927 instance=ExtResource("1_o5qli")]
+layout_mode = 2
+
+[node name="Contador7" parent="ScrollContainer/GridContainer" unique_id=233370884 instance=ExtResource("1_o5qli")]
+layout_mode = 2
+
+[node name="Contador8" parent="ScrollContainer/GridContainer" unique_id=1019699937 instance=ExtResource("1_o5qli")]
+layout_mode = 2
+
+[node name="Contador9" parent="ScrollContainer/GridContainer" unique_id=1557034191 instance=ExtResource("1_o5qli")]
+layout_mode = 2
+
+[node name="Contador10" parent="ScrollContainer/GridContainer" unique_id=156803518 instance=ExtResource("1_o5qli")]
+layout_mode = 2
+
+[node name="Contador11" parent="ScrollContainer/GridContainer" unique_id=529962386 instance=ExtResource("1_o5qli")]
+layout_mode = 2
+
+[node name="Contador12" parent="ScrollContainer/GridContainer" unique_id=1549090103 instance=ExtResource("1_o5qli")]
+layout_mode = 2
+
+[node name="Contador13" parent="ScrollContainer/GridContainer" unique_id=1432630621 instance=ExtResource("1_o5qli")]
+layout_mode = 2
+
+[node name="Contador14" parent="ScrollContainer/GridContainer" unique_id=185425127 instance=ExtResource("1_o5qli")]
+layout_mode = 2
+
+[node name="Contador15" parent="ScrollContainer/GridContainer" unique_id=1810204487 instance=ExtResource("1_o5qli")]
+layout_mode = 2
+
+[node name="Contador16" parent="ScrollContainer/GridContainer" unique_id=1363537606 instance=ExtResource("1_o5qli")]
+layout_mode = 2
+
+[node name="Contador17" parent="ScrollContainer/GridContainer" unique_id=1958514131 instance=ExtResource("1_o5qli")]
+layout_mode = 2
+
+[node name="Contador18" parent="ScrollContainer/GridContainer" unique_id=780095265 instance=ExtResource("1_o5qli")]
+layout_mode = 2
