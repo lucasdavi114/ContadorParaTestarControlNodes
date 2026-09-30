@@ -1,0 +1,11 @@
+[gd_resource type="StyleBoxFlat" format=3 uid="uid://c18st6bhaivin"]
+
+[resource]
+bg_color = Color(0, 0.014833845, 0.234375, 1)
+border_color = Color(0.74609375, 0.15799631, 0.26625308, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+anti_aliasing = false
+anti_aliasing_size = 0.01
