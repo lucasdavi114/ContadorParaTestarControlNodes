@@ -11,12 +11,12 @@ func _ready() -> void:
 	
 	carregar_dados()
 func _on_button_pressed() -> void:
-	adicionar_contador(0, "")
+	adicionar_contador(0, "", 1)
 	salvar_dados()
 
-func adicionar_contador(valor: int, nome: String):
+func adicionar_contador(valor: int, nome: String, passo: int = 1):
 	var contador: Contador = contadorScene.instantiate()
-	contador.set_dados(valor, nome)
+	contador.set_dados(valor, nome, passo)
 	grid.add_child(contador)
 	
 	contador.estado_alterado.connect(salvar_dados)
@@ -30,7 +30,8 @@ func salvar_dados() -> void:
 		if not child.is_queued_for_deletion():
 			dados_array.append({
 				"valorCont": child.valorCont,
-				"contadorNome": child.lineEdit.text
+				"contadorNome": child.lineEdit.text,
+				"passo": child.get_passo()
 			})
 	
 	var file: FileAccess = FileAccess.open(SAVE_PATH, FileAccess.WRITE)
@@ -47,4 +48,5 @@ func carregar_dados() -> void:
 			for item in dados:
 				var valor = item.get("valorCont", 0)
 				var nome = item.get("contadorNome", "")
-				adicionar_contador(valor, nome)
+				var passo = item.get("passo", 1)
+				adicionar_contador(valor, nome, passo)
